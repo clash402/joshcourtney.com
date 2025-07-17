@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram, faThreads } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -8,13 +7,13 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#181a20] text-white font-sans px-4">
       {/* Profile Picture */}
       <div className="w-36 h-36 border-4 border-gray-300 rounded-full bg-[#23242a] flex items-center justify-center mb-8 shadow-lg overflow-hidden">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/headshot.png"
           alt="Josh Courtney"
           width={144}
           height={144}
           className="w-full h-full object-cover"
-          priority
         />
       </div>
       {/* Name */}

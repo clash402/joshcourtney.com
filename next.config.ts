@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
-  assetPrefix: process.env.NODE_ENV === "production" && process.env.GITHUB_PAGES === "true" ? "/joshcourtney.com/" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/joshcourtney.com/" : "",
   images: {
     unoptimized: true,
     loader: "default",

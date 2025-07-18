@@ -9,7 +9,7 @@ export default function Home() {
       <div className="w-36 h-36 border-4 border-gray-300 rounded-full bg-[#23242a] flex items-center justify-center mb-8 shadow-lg overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={process.env.NODE_ENV === "production" ? "/joshcourtney.com/headshot.png" : "/headshot.png"}
+          src="/headshot.png"
           alt="Josh Courtney"
           width={144}
           height={144}
